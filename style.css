@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', cursive;
+}
+html {
+    font-size: 62.5%;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 6px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*Espace entre le FastFOOD et le menu*/
+    padding: 20px 10%; /*Padding des 2 cotés et du top*/
+}
+header .logo span { /*Pour changer le span du logo*/
+    color: #f46a06;
+}
+.menu_number { /*Modif du numéro de téléphone sur la ligne du menu*/
+    display: flex;
+    align-items: center;
+}
+.menu_number .number {
+    margin-left: 90px; /*créer espace entre le numéro et le menu*/
+}
+.menu {
+    display: flex; /*mettre le menu sur une ligne et pas un en desous des autres*/
+}
+.menu li {
+    margin-left: 25px; /*marge de 25 entre chaque selections du menu*/
+    list-style: none; /*enlever . devant les noms*/
+}
+.menu li a { /*changement sur texte du menu*/
+    font-size: 12px;
+    text-decoration: 0; /*enlever soulignement*/
+    color: #f46a06;
+    text-transform: capitalize; /*mettre maj a chaque début*/
+}
+.number { /*modif sur le numéro de téléphone uniquement*/
+    background-color: #f46a06;
+    padding: 7px 30px;
+    color: #fff;
+}
+
+/*Home CSS*/
+.home{
+    padding: 0 10%; /*Décaler le home a droite pour s'aligner au autres éléments*/
+    min-height: 70vh; /*Taille minimal du home*/
+    display: flex;
+    align-items: center; /*Centrer l'élément au milieu de ça section*/
+}
+.site_desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site_desc .left { /*élément à gauche avec une taille de 40 pourcent pour mettre celle de gauche*/
+    width: 40%;
+}
+.site_desc .left h1{ /*H1 de la partie gauche*/
+    font-size: 30px;
+}
+.site_desc .left p { /*P de la partie gauche*/
+    color: #999;
+    margin-top: 10px; /*espace entre le h1 et le P*/
+}
+.left_button { /*les deux boutons commander maintenant et apprendre plus*/
+    display: flex;
+    margin-top: 20px;
+}
+.left_button a { /*Boutons mais les liens a*/
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+a { /*a en général*/
+    display: flex;
+    text-decoration: 0; /*enlever soulignement de tous les éléments a*/
+}
+a img { /*modifier les images des liens a*/
+    width: 20px; /*taille des images (donc de la fleche et panier)*/
+    margin-left: 5px; /*décaler image de la gauche de 5px*/
+}
+.left_button a:first-child { /*premier bouton commander maintenant donc first*/
+    background-color: #f46a06; /*créer l'encadrer du bouton avec le background*/
+    color: #fff; /*changement couleur texte*/
+}
+.left_button a:last-child { /*dernier bouton apprendre pkus donc last*/
+    margin-left: 25px; /*créer espace à gauche pour le texte soit centré*/
+    background-color: #fff;
+    color: #000; /*couleur texte*/
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1); /*créer ombre pour faire ressortir le bouton blanc de base*/
+}
+.site_desc .right { /*élément à droite à coté de site_desc left*/
+    width: 45%;
+    height: 350px;
+}
+.site_desc .right img {
+    height: 100%; /*hauteur de 100*/
+    width: 100%;
+    object-fit: cover; /*couvrir l'entiereté de la hauteur et largeur au dessus*/
+    border-radius: 20px; /*arrondir les angles de l'image*/
+    box-shadow: 0 0 10p rgba(0,0,0,0.1);
+}
+
+/*Statistics CSS*/
+
+.info-statistics { /*Section info-statistics en général*/
+    background-color: #f46a06;
+    display: flex;
+    align-items: center; /*Centrer en hauteur les éléments*/
+    justify-content: center; /*Centrer sur la largeur les éléments*/
+    flex-wrap: wrap;
+    padding: 50px 15%; /*padding de 50px coté et 15 pourcent en top et bottom*/
+}
+.info-statistics .box { /*texte dans les boxes*/
+    text-align: center; /*Centrer le texte dans la boxe*/
+    margin-left: 150px;
+}
+.info-statistics .box p { /*texte de la box donc restaurants franchisés ect*/
+    color: #fff;
+    font-size: 12px;
+}
+.info-statistics .box h1 { /*Titre dans chaque boxe donc les nombres 7505+*/
+    font-size: 25px;
+    color: #fff;
+}
+
+/*A propos CSS*/
+
+.about-us { /*Détails section about-us en globalité*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+}
+.about-us .left { /*Taille accordé a la section left dans la section about us*/
+    width: 50%;
+}
+.about-us .left img { /*image de la partie gauche de la section about u*/
+    height: 350px;
+    width: 100%; /*largeur de 100 pourcent de son espace*/
+    object-fit: cover;  /*recouvrir l'entiereté de son emplacement*/
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.about-us .right { /*Taille accordé a la section right dans la section about us*/
+    width: 40%;
+}
+.about-us .right h2 { /*Titre de la partie droite de about us*/
+    font-size: 25px;
+}
+.about-us .right p { /*texte de la partie droite de about us*/
+    margin: 10px 0;
+    color: #999;
+}
+.about-us .right button { /*Bouton apprendre plus*/
+    padding: 8px 20px;
+    background-color: #f46a06;
+    border: 0;
+    color: #fff;
+}
+.about-us .right button a {
+    color: #fff; /*couleur du texte dans le bouton*/
+    display: flex;
+    align-items: center;
+}
+
+/*Service CSS*/
+
+
+.services { /*réglage général de la section service*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10% ;
+}
+.services p { 
+    font-size: 13px; 
+    color: #555555;
+}
+.services .left { /*réglage de la section service gauche*/
+    display: flex;
+    flex-direction: column;
+    width: 40%; /*taille accordé dans la section*/
+}
+.text { /*réglage pour text en dessous du titre "nous faissons"*/
+    padding: 10px 0;
+}
+.services .left h2 { /*Le titre "Nous faissons" */
+    font-size: 25px;
+}
+.services .left .service { /*texte à coté des images check validé*/
+    display: flex;
+    align-items: center;
+}
+.services .left .service img { /*images check validé*/
+    width: 25px;
+}
+.services .left button { /*button savoir plus*/
+    margin-top: 20px; 
+    width: fit-content; /*la taille accordé et la taille juste suffisante pour que chaque éléments rentrent à l'intérieur*/
+    padding: 10px 25px; /*padding 10 gauche droite et 25 haut bas*/
+    background-color: #f46a06;
+    border: 0; /*enlever bordure autour du button*/
+}
+.services .left button a { /*texte du button*/
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.services .left .service p { /*texte a coté des check*/
+    margin-left: 10px; /*marge a gauche de 10px entre texte et check*/
+} 
+.services .right { /*réglage de la section service droite*/
+    width: 55%;
+    height: 500px;
+}
+.services .right img { /*image de la section services à droite*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+/* Banner CSS*/
+
+.banner { /* réglage de la section banner*/
+    text-align: center;
+    margin: 50px 0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/img3.jpg); /* mettre l'image en arriere plan derriere le texte*/
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+}
+.banner h1 { /* titre dans la bannière*/
+    color: #f46a06;
+    font-size: 30px;
+}
+.banner p { /*Texte de la bannière en dessous du texte*/
+    font-size: 15px;
+    padding: 5px 0;
+    color: #fff;
+}
+
+/*Meal CSS*/
+
+.meal { /*réglage de la section meal*/
+    margin: 100px 0;
+}
+.meal .top {
+    text-align: center;
+}
+.meal .top h1 { /*Titre de la section meal top*/
+    font-size: 30px;
+    padding: 15px 0;
+}
+.meal .top p { 
+    color: #555555;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.meal .bottom { /*La sections des différents plats à commander*/
+    margin: 60px 12%;
+    display: flex;
+    justify-content: space-between;
+}
+.meal .bottom .box{ /*Box de chaques plats proposé*/
+    text-align: center;
+    width: 30%; /*Taille de la box accordé*/
+}
+.meal .bottom .box img{ /*réglages des images des box*/
+    width: 100%; /*Taille de 100 pourcent de son espace*/
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.meal .bottom .box h4 { /*Taille des titres h4 des box*/
+    font-size: 20px;
+    margin: 10px 0; /*marges 10 en haut en bas et 0 sur cotés*/
+}
+.meal .bottom .box p { /*Taille texte box (temps livraison)*/
+    margin: 5px 0; 
+    font-size: 12px;
+    color: #999;
+}
+.meal .bottom .box span{ /*Taille des prix des box*/
+    font-size: 25px;
+    color: #f46a06;
+}
+.meal .bottom .box button a img { /*Taille de l'image du caddie dans la box pour commander*/
+    width: 20px;
+    height: 20px;
+    width: fit-content; /*la largeur est de l'espace dont les éléments on besoin*/
+}
+.meal .bottom .box button { /*réglage du bouton*/
+    background-color: #f46a06;
+    border: 0;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    display: flex; /*permet de le mettre au centre car flex*/
+}
+.meal .bottom .box button a { /*réglage du texte "Commander" dans le bouton*/
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #f46a06;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+.menu_toggle { /*faire disparaitre le menu responsive en tant normal*/
+    display: none;
+}
+
+/*Responsive*/
+@media (max-width:739px) {
+    header {
+        padding: 10px 20px;
+    }
+    header .menu {
+        display: none; /*faire disparaitre le menu lorsque la largeur est inférieur à 739px*/
+    }
+    .number {
+        display: none; /*Faire disparaitre numéro de téléphone*/
+    }
+    .home { 
+        margin: 50px 0; /*ajout de marge pour espacer les éléments*/
+        padding: 0 20px; 
+    }
+    .home .site_desc {
+        flex-direction: column-reverse; /*mettre photo et description les un en dessous des autres*/
+    }
+    .home .site_desc .left {
+        width: 100%; /*Taille largeur de la description de 100 pourcent de l'espace*/
+    }
+    .home .site_desc .right {
+        width: 100%; /*Taille de l'image a droite*/
+    }
+    .info-statistics { 
+        padding: 30px 20px;
+    }
+    .about-us {
+        flex-direction: column-reverse; /*mettre les éléments en dessous des autres pour facilité la lecture*/
+        padding: 50px 20px;
+    }
+    .about-us .left { 
+        margin-top: 50px; /*marge entre photo et bouton "apprendre plus" dessus*/
+    }
+    .about-us .left, .about-us .right { /*parametre sur les deux parties en meme temps*/
+        width: 100%; /*Taille des éléments de 100 pourcent de l'espace*/
+    }
+    .services { /*catégorie "Nous faissons tout nos plats"*/
+        padding: 0 20px;
+        position: relative;
+        width: 100%;
+        margin: 100px 0; /*marge pour créer de l'espace en haut et en bas*/
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/img2.jpg); 
+        /*mettre l'image en arriere plan et pas a coté pour laisser plus de place au texte*/
+        background-position: center;
+        background-size: cover; /*pour voir l'image en entiere meme qunad elle est diminué*/
+        min-height: 70vh;
+        z-index: -50;
+    }
+    .services .right {
+        display: none;
+    }
+    .services h2 {
+        color: #f46a06;
+    }
+    .services p {
+        color: #fff;
+    }
+    .services .left { /*taille accordé au texte sur l'image*/
+        width: 100%;
+    }
+    .banner {
+        padding: 100px 20px; /*padding pour centrer texte*/
+    }
+    .banner h1 {
+        font-size: 18px;
+    }
+    .banner p {
+        font-size: 12px;
+    }
+    .meal .top h1 {
+        font-size: 20px;
+    }
+    .meal .top p { /*faire disparaitre texte du P*/
+        display: none;
+    }
+    /*Responsive menu*/
+    .menu_toggle { /*création menu hamburger pour remplacer menu classique de selection*/
+        height: 50px;
+        width: 50px;
+        background-color: #fff;
+        position: fixed; /*pour ne pas qu'il bouge et reste afficher a l'écran*/
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 6px;
+    }
+    .menu_toggle::before { /*création de la forme a l'intérieur du menu responsive*/
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 28px;
+        background-color: #f46a06;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 #f46a06;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .menu_toggle.active::before {
+        transform: rotate(135deg);
+        box-shadow: 0 0 0 #f46a06;
+    }
+    .menu_toggle::after { /*création de la forme a l'intérieur du menu responsive*/
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 28px;
+        background-color: #f46a06;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .menu_toggle.active::after {
+        transform: rotate(-135deg);
+    }
+    header .menu.responsive {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255 255 255 /0.9); /*arriere plan pour selection lors du clique sur menu burger*/
+        backdrop-filter: blur(5px);
+        z-index: 50px;
+    }
+    header .menu.responsive li { /*les catégories du menu burger*/
+        margin: 20px 0;  
+    }
+    header .menu.responsive li a {
+        font-size: 14px;
+    }
+
+}
+
+/*Responsive box meal*/
+@media (max-width:634px) {
+    .meal .bottom {
+        flex-direction: column; /*mettre les propositions de plats les un en dessous des autres*/
+    }
+    .meal .bottom .box {
+        width: 100%;
+        margin-bottom: 20px; /*espace entre bouton commander et photo d'en dessous*/
+    }
+}

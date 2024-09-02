@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast FOOD SITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Fast<span>FOOD</span></h1>
+        </div>
+        <div class="menu_number">
+            <ul class="menu">
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Plats</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="number">
+                <p>1085 350 520</p>
+            </div>
+        </div>
+        <!-- Responsive menu -->
+        <div class="menu_toggle"></div>
+    </header>
+
+    <!--Home-->
+    <section class="home">
+        <div class="site_desc">
+            <div class="left">
+                <h1>Commander de la nourriture dans nos restaurants près de chez vous.</h1>
+                <p>Lorem ipsum dolor sit amet. Quo consectetur porro vel iusto officia aut doloribus galisum eum dolor dolores est unde exercitationem. </p>
+                <div class="left_button">
+                    <a href="#">Commander Maintenant <img src="images/cart.png"></a>
+                    <a href="#">Apprendre Plus <img src="images/next.png"></a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/img1.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!--Site info statistics-->
+
+    <section class="info-statistics">
+        <div class="box">
+            <h1>7505+</h1>
+            <p>Restaurants</p>
+        </div>
+        
+            <div class="box">
+                <h1>4871+</h1>
+                <p>Franchisés</p>
+            </div>
+            
+                <div class="box">
+                    <h1>5184+</h1>
+                    <p>Employés</p>
+                </div>
+                
+                    <div class="box">
+                        <h1>7544+</h1>
+                        <p>Collaborateurs</p>
+                    </div>
+    </section>
+
+    <!-- A propos -->
+
+    <section class="about-us">
+        <div class="left">
+            <img src="images/img4.jpg">
+        </div>
+        <div class="right">
+            <h2>Nous préparons nos plats avec les meilleurs ingédrients du monde.</h2>
+            <p>Lorem ipsum dolor sit amet. Qui placeat nulla in soluta iure eum illo beatae in error sapiente est dolor consequatur qui accusantium sequi id perferendis quibusdam. Eos culpa quos hic eligendi facilis non harum fugit</p>
+            <button><a href="#">Apprendre Plus <img src="images/next_white.png"></a></button>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+     <section class="services">
+        <div class="left">
+            <h2>Nous faissons tout nos plats à la main avec de meilleurs ingrédients</h2>
+            <p class="text">Eos facilis autem et quia beatae qui omnis ducimus. Et suscipit dolore sed fugiat voluptatum est culpa error.</p>
+            <div class="service"><img src="images/check.png"><p>Eos facilis autem et quia beatae qui omnis ducimus.</p></div>
+            <div class="service"><img src="images/check.png"><p>Eos facilis autem et quia beatae qui omnis ducimus.</p></div>
+            <div class="service"><img src="images/check.png"><p>Eos facilis autem et quia beatae qui omnis ducimus.</p></div>
+            <button><a href="#">Savoir plus <img src="images/next_white.png"></a></button>
+        </div>
+        <div class="right">
+            <img src="images/img2.jpg">
+        </div>
+     </section>
+
+     <!-- Banner -->
+
+     <div class="banner">
+        <h1>Quand l'estomac d'un homme est pleins, <br> peu importe qu'il soit riche ou pauvre.</h1>
+        <p>Eos facilis autem et quia beatae qui omnis ducimus.</p>
+        <p>Eos facilis autem et quia beatae qui omnis ducimus.</p>
+     </div>
+
+     <!-- List meal-->
+
+     <div class="meal">
+        <div class="top">
+            <h1>Explorer nos repas</h1>
+            <p>Est expedita dolor nam beatae iusto et rerum perspiciatis aut quasi voluptates sit harum voluptas</p>
+            <p>Est expedita dolor nam beatae iusto et rerum perspiciatis aut quasi voluptates sit harum voluptas</p>
+            <p>Id molestias nihil sed inventore error qui labore eius. Vel error numquam</p>
+        </div>
+
+        <div class="bottom">
+            <div class="box">
+                <img src="images/img1.jpg">
+                <h4>Végétarien Salade Sandwitch</h4>
+                <p>Temps:10 - 15 Minutes | Livraison gratuite</p>
+                <span>$20</span>
+                <button><a href="#">Commander <img src="images/cart.png"></a></button>
+            </div>
+            <div class="box">
+                <img src="images/img2.jpg">
+                <h4>Végétarien Salade Sandwitch</h4>
+                <p>Temps:10 - 15 Minutes | Livraison gratuite</p>
+                <span>$30</span>
+                <button><a href="#">Commander <img src="images/cart.png"></a></button>
+            </div>
+            <div class="box">
+                <img src="images/img3.jpg">
+                <h4>Végétarien Salade Sandwitch</h4>
+                <p>Temps:10 - 15 Minutes | Livraison gratuite</p>
+                <span>$70</span>
+                <button><a href="#">Commander <img src="images/cart.png"></a></button>
+            </div>
+
+        </div>
+     </div>
+
+
+     <footer>
+        <p>Copyright ©2024 | Mattéo suivi tuto Youtube </p>
+     </footer>
+
+
+    <script>
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>
